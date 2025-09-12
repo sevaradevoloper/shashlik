@@ -214,7 +214,7 @@ button:hover::before {
   }
   .header__container {
   display:flex;
-   justify-content: center;
+  justify-content: center;
 }
   .hero__container {
   display:flex;
@@ -230,5 +230,10 @@ button:hover::before {
     color: #FFFFFF;
     margin-bottom: 25px;
     max-width: 400px;
+}
+.hero___box{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 }
