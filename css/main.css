@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Gilda+Display&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+body{
+  font-family: Montserrat;  
+}
+button {
+    width: 135px;
+    height: 48px;
+    border: 1px solid #FFFFFF;
+    background: linear-gradient(251.96deg, #BB2339 -20.95%, #BB2339 110.78%);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFFE5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(251.96deg, #470711 -20.95%, #BB2339 110.78%);
+    transition: all 0.5s ease;
+    z-index: -1;
+    border-radius: 100px;
+}
+button:hover {
+    color: #470711;
+    border-color: transparent;
+}
+button:hover::before {
+    width: 100%;
+}
+
+
+.header{
+    background: #BB2339;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 103px;
+    backdrop-filter: blur(50px);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.menu a{
+    font-family: "Open Sans" sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #FFFFFF;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #470711;
+    transition: width 0.3s ease;
+}
+.menu a:hover {
+    color: #470711;
+}
+        
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+.hero{
+    background: #BB2339;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+.hero__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__image{
+    max-width: 800px;
+    max-height: 600px;
+}
+.hero___box h6{
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 4%;
+    color: #FFFFFF;
+}
+.hero___box h1{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #FFFFFF;
+}
+.hero___box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 4%;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.hero___box button {
+    width: 175px;
+    height: 44px;
+}
