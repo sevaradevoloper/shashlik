@@ -10,37 +10,54 @@
     <title>Shashlik</title>
 </head>
 <body>
+<!-- HEADER -->
 <div class="header">
   <div class="container">
     <div class="header__container">
-       <a href="#"><img src="./img/Frame 64.svg" alt="eatturkish"></a>
-       <div class="bars" onclick="toggleMenu('menu', this)"><span></span><span></span><span></span></div>
-         <div class="menu" id="menu">
-            <a href="#">Menu</a>
-            <a href="#">News</a>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
-            <button>Log in</button>
-          </div>
-        </div>
+      <a href="#"><img src="./img/Frame 64.svg" alt="eatturkish"></a>
+
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <a href="#">Menu</a>
+        <a href="#">News</a>
+        <a href="#">About us</a>
+        <a href="#">Contact us</a>
+        <button>Log in</button>
+      </div>
+      <!-- Bars (mobil uchun) -->
+      <div class="bars" id="bars">
+        <span></span><span></span><span></span>
+      </div>
+
     </div>
   </div>
 </div>
+
+<!-- HERO -->
 <div class="hero">
-     <div class="container">
-        <div class="hero__container">
-          <div class="hero___box">
-            <h6>Chase the new Flavour</h6>
-            <h1>The key to Fine dining</h1>
-            <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-            <button>Explore Menu</button>
-          </div>
-          <div class="hero__image">
-            <a href="#"><img src="./img/set1.svg" alt=""></a>
-          </div>
-        </div>
+  <div class="container">
+    <div class="hero__container">
+      <div class="hero___box">
+        <h6>Chase the new Flavour</h6>
+        <h1>The key to Fine dining</h1>
+        <p>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+        <button>Explore Menu</button>
       </div>
+
+      <!-- Slideshow -->
+      <div class="hero__image">
+        <img class="slide active" src="./img/set1.svg" alt="">
+        <img class="slide" src="./img/set2.svg" alt="">
+        <img class="slide" src="./img/set3.svg" alt="">
+        <img class="slide" src="./img/set4.svg" alt="">
+        <img class="slide" src="./img/set5.svg" alt="">
+      </div>
+
+      <!-- Scroll yozuvi -->
+      <div class="scroll-text">Scroll</div>
+    </div>
   </div>
+</div>
 
   
   <script src="./js/main.js"></script>  
