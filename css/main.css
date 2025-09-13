@@ -244,7 +244,7 @@ button:hover::before {
 .scroll-text {
   position:absolute;
   bottom:20px;
-  right:150px;
+  right:180px;
   font-size:16px;
   font-weight:500;
   animation:bounce 1.5s infinite;
