@@ -715,6 +715,29 @@ h2{
   justify-content: center;
   margin-top: 25px;
 }
+.menyu__grid{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+.menyu__card{
+  min-width:200px;
+  max-width:250px;
+  height: 366px;
+  background:#fff;
+  border-radius:14px;
+  padding:px;
+  box-shadow:0 6px 14px rgba(0,0,0,0.1);
+  text-align:center;
+  margin-top: 50px;
+}
+.menyu__card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:8px;
+}
 .testimonials__list{
   display: flex;
   flex-direction: column;
@@ -722,6 +745,16 @@ h2{
   align-items: center;
   gap: 10px;
   margin-bottom: 25px;
+}
+.testimonials__items span{
+  display: flex;
+  gap: 100px;
+}
+.testimonials__items i{
+  color: #333333d2;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 130%;
 }
 .news__list{
   display: flex;
@@ -732,7 +765,7 @@ h2{
   align-items: center;
 }
 .news__items{
-  max-width: 415px;
+  max-width: 390px;
   min-height: 198px;
   border-radius: 20px;
   border-width: 0px, 0px, 0px, 0px;
@@ -742,6 +775,12 @@ h2{
 }
 .news__items img{
   margin-bottom: 25px;
-  max-width: 410px;
+  max-width: 380px;
+}
+iframe{
+  max-width: 1200px;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 }
