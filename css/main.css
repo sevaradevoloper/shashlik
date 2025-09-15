@@ -418,13 +418,13 @@ h2{
 .dishes__menu{
   display: flex;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
 .dishes__card{
-  min-width:220px;
-  max-width:310px;
+  min-width:200px;
+  max-width:250px;
   background:#fff;
   border-radius:14px;
   padding:24px;
@@ -433,7 +433,7 @@ h2{
   margin-top: 50px;
 }
 .dishes__card img{
-  width:100%;
+  width: 180px;;
   height:180px;
   object-fit:cover;
   border-radius:8px;
