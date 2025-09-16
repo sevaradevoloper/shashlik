@@ -16,6 +16,7 @@ function changeSlide() {
   slides[index].classList.add("active");
 }
 setInterval(changeSlide, 3000);
+setInterval(changeSlide, 3000);
 
 
 
@@ -142,17 +143,3 @@ setInterval(changeSlide, 3000);
   // Initial call to set everything up
   update();
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-

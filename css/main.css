@@ -542,6 +542,64 @@ iframe{
 }
 
 
+.gallery{
+  padding: 50px 0;
+}
+.gallery__list{
+  display: flex;
+}
+.gallery__items div{
+  display: flex;
+}
+.gallery__items p{
+  max-width: 491px;
+}
+.gallery__btn{
+  margin-top: 15px;
+  background: none;
+  border: #470711 1px solid;
+  color: #470711;
+}
+.gallery__card marquee{
+  display: flex;
+}
+.gallery__card {
+  position: relative;
+  display: flex;         /* yoki block — joylashuvga qarab o'zgartiring */
+  border-radius: 8px;            /* burchaklarni yumaloqlash (ixtiyoriy) */
+  width: 301px;                  /* kerakli o'lcham */
+  height: 447px;                 /* kerakli o'lcham */
+  cursor: pointer;
+}
+
+.gallery__card img {
+  transition: transform 350ms ease, filter 350ms ease;
+  will-change: transform, filter;
+  width: 301px;                  /* kerakli o'lcham */
+  height: 447px;
+}
+
+/* gradient overlay - boshlang'ichda ko'rinmaydi */
+.gallery__card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.986), rgb(0, 0, 0));
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* hover effekti */
+.gallery__card:hover::after {
+  opacity: 1;
+}
+
+/* ixtiyoriy: hoverda rasmni biroz kattalashtirish yoki kontrastni tushirish */
+.gallery__card:hover img {
+  transform: scale(1.03);        /* mayda parallax hissi */
+  filter: brightness(0.85);      /* rasmni sal qoraytiradi */
+}
+
 
 
 
@@ -778,5 +836,23 @@ iframe{
   display: none;
   justify-content: center;
   align-items: center;
+}
+.gallery__list{
+  display: block;
+}
+.gallery__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__card {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;            /* burchaklarni yumaloqlash (ixtiyoriy) */
+  width: 301px;                  /* kerakli o'lcham */
+  height: 447px;                 /* kerakli o'lcham */
+  cursor: pointer;
 }
 }
